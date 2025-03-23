@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="{{ "/" | relative_url }}" class="site-logo">{{ site.title }}</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="{{ "/" | relative_url }}">Home</a></li>
+          <li><a href="{{ "/data-tools" | relative_url }}">Data Tools</a></li>
+          <li><a href="{{ "/about" | relative_url }}">About</a></li>
+          <li><a href="{{ "/news" | relative_url }}">News</a></li>
+          <li><a href="{{ "/get-involved" | relative_url }}">Get Involved</a></li>
+          <li><a href="{{ "/donate" | relative_url }}" class="btn-donate">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>{{ site.title }}</h2>
+          <p>A collection of data and screening tools for environmental justice and climate action.</p>
+        </div>
+        <div class="footer-nav">
+          <h3>Site Links</h3>
+          <ul>
+            <li><a href="{{ "/" | relative_url }}">Home</a></li>
+            <li><a href="{{ "/data-tools" | relative_url }}">Data Tools</a></li>
+            <li><a href="{{ "/about" | relative_url }}">About</a></li>
+            <li><a href="{{ "/news" | relative_url }}">News</a></li>
+            <li><a href="{{ "/get-involved" | relative_url }}">Get Involved</a></li>
+            <li><a href="{{ "/donate" | relative_url }}">Donate</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; {% raw %}{{ 'now' | date: "%Y" }}{% endraw %} Data + Screening Tools. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

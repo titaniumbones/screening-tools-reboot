@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="tool-page">
+  <div class="container">
+    <h1 class="tool-title">{{ page.title }}</h1>
+    
+    {% if page.image %}
+    <div class="tool-image">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+    {% endif %}
+    
+    <div class="tool-content">
+      {{ content }}
+    </div>
+
+    {% if page.link %}
+    <div class="tool-link">
+      <a href="{{ page.link }}" class="btn btn-primary" target="_blank">Visit Tool</a>
+    </div>
+    {% endif %}
+  </div>
+</div>
