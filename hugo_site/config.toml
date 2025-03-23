@@ -1,0 +1,36 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Screening Tools"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+  description = "Public Environmental Data Partners"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Data Tools"
+    url = "/data-tools/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    name = "News"
+    url = "/news/"
+    weight = 4
+  [[menu.main]]
+    name = "Get Involved"
+    url = "/get-involved/"
+    weight = 5
+  [[menu.main]]
+    name = "Donate"
+    url = "/donate/"
+    weight = 6
