@@ -2,46 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//screening-tools-reboot:1313/about/</loc>
+    <loc>http://localhost/screening-tools-reboot/about/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/cdc/</loc>
+    <loc>http://localhost/screening-tools-reboot/cdc/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/climate-economic-justice-screening-tool/</loc>
+    <loc>http://localhost/screening-tools-reboot/climate-economic-justice-screening-tool/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/data-tools/</loc>
+    <loc>http://localhost/screening-tools-reboot/data-tools/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/</loc>
+    <loc>http://localhost/screening-tools-reboot/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/cart/</loc>
+    <loc>http://localhost/screening-tools-reboot/cart/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/doe-local-investments-map/</loc>
+    <loc>http://localhost/screening-tools-reboot/doe-local-investments-map/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/donate/</loc>
+    <loc>http://localhost/screening-tools-reboot/donate/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/epa-ej-grants/</loc>
+    <loc>http://localhost/screening-tools-reboot/epa-ej-grants/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/epa-ejam/</loc>
+    <loc>http://localhost/screening-tools-reboot/epa-ejam/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/epa-ejscreen/</loc>
+    <loc>http://localhost/screening-tools-reboot/epa-ejscreen/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/fema-future-risk/</loc>
+    <loc>http://localhost/screening-tools-reboot/fema-future-risk/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/get-involved/</loc>
+    <loc>http://localhost/screening-tools-reboot/get-involved/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//screening-tools-reboot:1313/news/</loc>
+    <loc>http://localhost/screening-tools-reboot/news/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url>
 </urlset>

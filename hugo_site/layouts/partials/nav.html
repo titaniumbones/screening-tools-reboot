@@ -2,9 +2,26 @@
     <ul>
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
-        <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ else if $currentPage.HasMenuCurrent "main" . }}active{{ else if eq $currentPage.RelPermalink .URL }}active{{ end }}">
-            <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
-        </li>
+            {{ if .HasChildren }}
+                <li class="has-dropdown {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                    <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                    <ul class="dropdown">
+                        {{ range .Children }}
+                            <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                                <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                            </li>
+                        {{ end }}
+                    </ul>
+                </li>
+            {{ else }}
+                {{ if ne .Parent "" }}
+                    <!-- This is a child item but we're at the top level range, skip it -->
+                {{ else }}
+                    <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ else if $currentPage.HasMenuCurrent "main" . }}active{{ else if eq $currentPage.RelPermalink .URL }}active{{ end }}">
+                        <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
+            {{ end }}
         {{ end }}
     </ul>
 </nav>

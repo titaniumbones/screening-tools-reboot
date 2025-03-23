@@ -113,20 +113,40 @@ header {
     margin-left: 2rem;
     position: relative;
     
-    &.active a {
+    &.active > a {
       color: $accent-color;
     }
     
-    &:last-child a {
-      background-color: $accent-color;
-      color: $text-light;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
+    &.has-dropdown {
+      position: relative;
       
-      &:hover {
-        background-color: darken($accent-color, 10%);
-        text-decoration: none;
+      &:hover .dropdown {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      > a:after {
+        content: "▼";
+        font-size: 0.6rem;
+        display: inline-block;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+      }
+    }
+    
+    &:last-child a {
+      &:not(.dropdown a) {
+        background-color: $accent-color;
+        color: $text-light;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+        
+        &:hover {
+          background-color: darken($accent-color, 10%);
+          text-decoration: none;
+        }
       }
     }
   }
@@ -141,6 +161,63 @@ header {
     
     &:hover {
       color: $primary-color;
+    }
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0rem;
+    background-color: $background-color;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    min-width: 280px;
+    padding: 0.75rem 0;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    flex-direction: column;
+    ul {
+      display: block; // This ensures the items are stacked vertically
+      flex-direction: column;
+      width: 100%;
+    }
+    
+    li {
+      margin: 0;
+      display: block;
+      width: 100%;
+      margin-left: 1rem;
+      
+      &:last-child a {
+        background-color: transparent;
+        color: $secondary-color;
+        border-radius: 0;
+        
+        &:hover {
+          color: $primary-color;
+          background-color: transparent;
+        }
+      }
+      
+      &.active a {
+        color: $accent-color;
+        font-weight: 600;
+      }
+    }
+    
+    a {
+        padding: 0;
+      display: block;
+      white-space: nowrap;
+      width: 100%;
+      
+      &:hover {
+        background-color: rgba(0,0,0,0.05);
+      }
     }
   }
 }
@@ -321,6 +398,39 @@ article {
     
     li {
       margin: 0.5rem 0.75rem;
+      
+      &.has-dropdown {
+        position: relative;
+        
+        .dropdown {
+          position: static;
+          visibility: visible;
+          opacity: 1;
+          transform: none;
+          box-shadow: none;
+          border: none;
+          background-color: transparent;
+          min-width: auto;
+          padding: 0;
+          margin-top: 0.5rem;
+          display: none;
+          
+          li {
+            margin: 0.25rem 0;
+          }
+          
+          a {
+            padding: 0.25rem 0;
+            font-size: 0.9rem;
+          }
+        }
+        
+        &:hover .dropdown,
+        &:focus .dropdown,
+        &:active .dropdown {
+          display: block;
+        }
+      }
     }
   }
   
