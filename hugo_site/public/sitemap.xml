@@ -2,46 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>//screening-tools-reboot:1313/about/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/cdc/</loc>
+    <loc>//screening-tools-reboot:1313/cdc/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/climate-economic-justice-screening-tool/</loc>
+    <loc>//screening-tools-reboot:1313/climate-economic-justice-screening-tool/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/data-tools/</loc>
+    <loc>//screening-tools-reboot:1313/data-tools/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/</loc>
+    <loc>//screening-tools-reboot:1313/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/cart/</loc>
+    <loc>//screening-tools-reboot:1313/cart/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/doe-local-investments-map/</loc>
+    <loc>//screening-tools-reboot:1313/doe-local-investments-map/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/donate/</loc>
+    <loc>//screening-tools-reboot:1313/donate/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/epa-ej-grants/</loc>
+    <loc>//screening-tools-reboot:1313/epa-ej-grants/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/epa-ejam/</loc>
+    <loc>//screening-tools-reboot:1313/epa-ejam/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/epa-ejscreen/</loc>
+    <loc>//screening-tools-reboot:1313/epa-ejscreen/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/fema-future-risk/</loc>
+    <loc>//screening-tools-reboot:1313/fema-future-risk/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/get-involved/</loc>
+    <loc>//screening-tools-reboot:1313/get-involved/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:1313/news/</loc>
+    <loc>//screening-tools-reboot:1313/news/</loc>
     <lastmod>2025-03-23T00:00:00+00:00</lastmod>
   </url>
 </urlset>

@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://titaniumbones.github.io/screening-tools-reboot/"
 languageCode = "en-us"
 title = "Screening Tools"
 disableKinds = ["taxonomy", "taxonomyTerm"]
